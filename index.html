@@ -23,11 +23,16 @@
             }
         }
     </script>
-
+    
     <title>Hockey's</title>
+    <style>
+        .font{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font">
     <header>
         <nav>
             <div class="navbar bg-base-100">
@@ -49,11 +54,11 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                    <a class="text-xl text-[#131318] w-auto h-auto font-extrabold">Hockey <span class="text-[#FF4240]">'</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
+                        <li><a><span class="text-[#FF4240]">Home</span></a></li>
                             <li> <a>About</a></li>
                             <li><a>Pages</a></li>
                             <li><a>Blog</a></li>
@@ -61,10 +66,36 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                 <img src="./Images/search.svg" alt="" class="invisible lg:visible">
+                    <a href=""><button class="btn btn-active btn-secondary bg-[#FF4240] hover:bg-[#FF4240] ml-5">Get Ticket</button></a>
                 </div>
             </div>
         </nav>
+
+        <div class="carousel">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <!-- <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div> -->
+                </div> 
+                
+                
+              </div>
+
+        </div>
+
+
+
 
     </header>
 
