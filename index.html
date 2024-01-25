@@ -47,7 +47,7 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu menu-sm dropdown-content p-2 mt-3 z-[1] shadow bg-base-100 rounded-box w-52">
                             <li><a>Home</a></li>
                             <li> <a>About</a></li>
                             <li><a>Pages</a></li>
@@ -55,8 +55,8 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="text-xl text-[#131318] w-auto  h-auto font-extrabold">Hockey <span
-                            class="text-[#FF4240]">'</span>s</a>
+                    <a class="text-2xl text-[#131318] w-auto  h-auto font-extrabold gap-0">Hockey<span
+                            class="text-[#FF4240] p-0">'</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -169,7 +169,7 @@
         <!-- start of card section  -->
         <div class="card-section flex flex-col gap-6 lg:flex-row flex-wrap">
 
-            <div class="card w-96 bg-base-100 shadow-xl image-full lg:w-[553px]">
+            <div class="card w-[300px] bg-base-100 shadow-xl m-auto image-full lg:w-[553px]">
                 <figure><img src="./Images/2.png" alt="" /></figure>
                 <div class="card-body">
                     <div class=" lg:mt-20 mb-5">
@@ -183,7 +183,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl image-full lg:w-[553px]">
+            <div class="card w-[300px] bg-base-100 shadow-xl m-auto image-full lg:w-[553px]">
                 <figure><img src="./Images/3.png" alt="" /></figure>
                 <div class="card-body">
                     <div class="lg:mt-20 mb-5">
@@ -199,7 +199,7 @@
             </div>
 
 
-            <div class="card w-96 bg-base-100 shadow-xl image-full lg:w-full">
+            <div class="card w-[300px] bg-base-100 shadow-xl m-auto image-full lg:w-full">
                 <figure><img src="./Images/4.png" alt="" /></figure>
                 <div class="card-body">
                 <div class="lg:mt-44 mb-5">
@@ -841,7 +841,7 @@
         <div
             class="faq-section flex flex-col rounded-lg border border-opacity-10 border-solid border-black p-4 lg:flex-row justify-between  ">
             <div>
-                <img class="lg:h-full" src="./Images/11.png" alt="">
+                <img class="mb-4 lg:h-full" src="./Images/11.png" alt="">
             </div>
             <div>
                 <div class="collapse collapse-plus bg-white">
@@ -924,30 +924,69 @@
 
         <!-- start of location and send message part  -->
 
-        <div class="location-message ">
-            <div class="rounded-2xl border border-opacity-10 border-solid border-black p-4  ">
+        <div class="location-message flex flex-col lg:flex-row">
+            <div class="rounded-2xl border border-opacity-10 border-solid border-black p-1 m-auto ">
             <div class="callig w-72 h-44 bg-[#BCED6D1A] rounded-2xl m-6 ">
                 <div class="pl-8 pt-8">
                 <img src="./Images/calling.png" alt="">
-                <p class="text-[#0D0D1266] text-base font-normal leading-8  "> Phone Number :</p>
+                <p class="text-[#0D0D1266] text-base font-normal leading-8  ">Phone Number :</p>
                 <h3 class="text-[#131318] text-lg font-extrabold leading-8">(+62) 123-321-543</h3>
                </div>
             </div>
-            <div class="callig w-72 h-44 bg-[#FDDD5F1A] rounded-2xl m-6">
+            <div class="mail w-72 h-44 bg-[#FDDD5F1A] rounded-2xl m-6">
                 <div class="ml-8 pt-8">
                 <img src="./Images/mail.png" alt="">
-                <p class="text-[#0D0D1266] text-base font-normal leading-8  "> Email :</p>
+                <p class="text-[#0D0D1266] text-base font-normal leading-8  ">Email :</p>
                 <h3 class="text-[#131318] text-lg font-extrabold leading-8">hockeys@support.com</h3>
                </div>
             </div>
-            <div class="callig w-72 h-44 bg-[#629CF31A] rounded-2xl m-6">
-                <div class="ml-8 pt-8">
+            <div class="location w-72 h-44 bg-[#629CF31A] rounded-2xl m-6">
+                <div class="ml-8 pt-5">
                 <img src="./Images/location.png" alt="">
-                <p class="text-[#0D0D1266] text-base font-normal leading-8  "> Location :</p>
+                <p class="text-[#0D0D1266] text-base font-normal leading-8">Location :</p>
                 <h3 class="text-[#131318] text-lg font-extrabold leading-8">152/1 Mohakhali Wireless Gate</h3>
                </div>
             </div>
         </div>
+
+        <div class="lg:col-span-2 mt-6">
+            <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+                <div>
+                    <label for="">Your Name</label>
+                    <input type="text" placeholder="Enter your full name
+                    " class="input input-bordered w-full mt-4 bg-[#13131808]" />
+                </div>
+
+                <div>
+                <label for="">Your Email</label>
+                <input type="text" placeholder="Enter your email" class="input input-bordered w-full mt-4 bg-[#13131808]" />
+            </div>
+            </div>
+            <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 mt-6">
+                <div>
+                    <label for="">Subject</label>
+                    <input type="text" placeholder="Enter your subject
+                    " class="input input-bordered w-full mt-4 bg-[#13131808] " />
+                </div>
+
+                <div>
+                <label for="">Phone Number</label>
+                <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full mt-4 bg-[#13131808]" />
+            </div>
+            </div>
+            <div class="mt-6">
+                <div>
+                    <label for="">Message</label>
+                    <textarea class="textarea w-full textarea-bordered mt-4 bg-[#13131808]" rows="9" placeholder="Write your message"></textarea>
+                </div>
+
+            </div>
+            <button class="btn btn-primary bg-red-500 hover:bg-red-500 border-none w-full mt-6">Send Message</button>
+
+        </div>
+
+
+
         </div>
 
 
